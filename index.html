@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Dongyeon Introduce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-top">
+            <div class="profile-left">
+                <h1 id="main-title">who am I?</h1>
+                <img src="picture/webimage.jpg" class="profile-img" alt="프로필 사진">
+
+                <p class="label">-profile</p>
+                <p>name: 김동연</p>
+                <hr>
+                <p>age: 24</p>
+                <hr>
+                <p>birth: 2003.11.06</p>
+                <hr>
+                <p>MBTI: INFP</p>
+            </div>
+
+            <div class="profile-right">
+                <div class="tags">
+                    <p>mobile: 010-4817-6581</p>
+                    <p>e-mail: yeon6626@gmail.com</p>
+                    <div class="icons">
+                        <img src="picture/web그림1.png" width="30" alt="">
+                        <img src="picture/web그림5.png" width="30" alt="">
+                        <img src="picture/web그림6.png" width="30" alt="">
+                    </div>
+                </div>
+
+                <h2>About me..</h2>
+
+                <div class="info-item">
+                    <strong><img src="picture/web그림2.png" width="20" alt=""> My advantage:</strong>
+                    <ul>
+                        <li>할 일이 있으면 끈기 있게 한다.</li>
+                        <li>일을 꼼꼼하게 체크한다.</li>
+                    </ul>
+                    <hr>
+                </div>
+
+                <div class="info-item">
+                    <strong><img src="picture/web그림3.png" width="20" alt=""> My weakness:</strong>
+                    <ul>
+                        <li>신중하게 일을 해서 작업 속도가 느리다.</li>
+                        <li>성격이 내성적이다.</li>
+                    </ul>
+                    <hr>
+                </div>
+
+                <div class="info-item">
+                    <strong><img src="picture/web그림4.png" width="20" alt=""> This year's goal:</strong>
+                    <ul>
+                        <li>C언어, 파이썬 활용해서 개인 프로젝트 만들어보기</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="goal-section">
+            <h2>To do list</h2>
+            <p class="goal-description">
+                해야할 일이 무엇인가요?
+            </p>
+
+            <div class="goal-input-box">
+                <input
+                    id="goalInput"
+                    type="text"
+                    placeholder="예: 프로그래밍 과제 하기"
+                >
+                <button type="button" id="addGoalBtn">추가</button>
+            </div>
+
+            <p id="errorMessage"></p>
+            <p id="goalCount">현재 해야할 일</p>
+            <ul id="goalList"></ul>
+        </section>
+
+        <section class="guestbook-section" aria-labelledby="guestbook-title">
+            <div class="guestbook-inner">
+                <div class="guestbook-header">
+                    <div class="guestbook-icon-circle" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="guestbook-icon-msg">
+                            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                        </svg>
+                    </div>
+                    <h2 id="guestbook-title" class="guestbook-title">방명록</h2>
+                    <p class="guestbook-subtitle">따뜻한 응원의 한마디를 남겨주세요</p>
+                </div>
+
+                <div class="guestbook-card guestbook-card--form">
+                    <div class="guestbook-card-head">
+                        <h3 class="guestbook-card-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="guestbook-icon-accent">
+                                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                                <path d="M5 3v4" />
+                                <path d="M19 17v4" />
+                                <path d="M3 5h4" />
+                                <path d="M17 19h4" />
+                            </svg>
+                            <span>응원 메시지 작성</span>
+                        </h3>
+                    </div>
+                    <div class="guestbook-card-body">
+                        <form id="guestbook-form" class="guestbook-form">
+                            <div class="guestbook-form-row">
+                                <div class="guestbook-input-wrap guestbook-input-wrap--name">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="guestbook-input-icon">
+                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                        <circle cx="12" cy="7" r="4" />
+                                    </svg>
+                                    <input
+                                        id="guest-name"
+                                        type="text"
+                                        class="guestbook-input guestbook-input--name"
+                                        placeholder="이름 (선택)"
+                                        autocomplete="nickname"
+                                    >
+                                </div>
+                                <div class="guestbook-input-wrap guestbook-input-wrap--message">
+                                    <input
+                                        id="guest-message"
+                                        type="text"
+                                        class="guestbook-input guestbook-input--flex"
+                                        placeholder="응원 한마디 남겨주세요!"
+                                        autocomplete="off"
+                                    >
+                                </div>
+                            </div>
+                            <button type="submit" id="submit-btn" class="guestbook-submit" disabled>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="guestbook-btn-icon">
+                                    <path d="m22 2-7 20-4-9-9-4Z" />
+                                    <path d="M22 2 11 13" />
+                                </svg>
+                                등록하기
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="guestbook-list-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="guestbook-icon-accent">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                    <h3 class="guestbook-list-title">
+                        응원 메시지 <span id="entries-count" class="guestbook-count">2</span>
+                    </h3>
+                </div>
+
+                <div id="entries-empty" class="guestbook-card guestbook-card--empty guestbook-hidden" aria-live="polite">
+                    <div class="guestbook-empty-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="guestbook-empty-icon">
+                            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                        </svg>
+                        <p class="guestbook-empty-text">아직 작성된 방명록이 없습니다.</p>
+                        <p class="guestbook-empty-hint">첫 번째 응원 메시지를 남겨주세요!</p>
+                    </div>
+                </div>
+
+                <div id="entries-list" class="guestbook-entries"></div>
+
+                <p class="guestbook-footer">방문해 주셔서 감사합니다 🧡</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
